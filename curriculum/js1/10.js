@@ -7,7 +7,11 @@
  * @param {function} c
  */
 
-const solution = (a, b, c) => {
+const solution = (a, b, func) => {
+  if(a===0)
+    return func();
+  if(b===0)
+    return func();
 };
 
 module.exports = {
