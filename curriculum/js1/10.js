@@ -7,11 +7,9 @@
  * @param {function} c
  */
 
-const solution = (a, b, func) => {
-  if(a===0)
-    return func();
-  if(b===0)
-    return func();
+const solution = (a,b,c) => {
+  setTimeout(c,a*1000);
+  setTimeout(c,b*1000);
 };
 
 module.exports = {
