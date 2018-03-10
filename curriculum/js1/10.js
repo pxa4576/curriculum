@@ -7,8 +7,12 @@
  * @param {function} c
  */
 
-const solution = (a, b, c) => {
-};
+const solution = (a, b, func) => {
+  setTimeout(() => {
+    func();
+    setTimeout(func, b)
+  },a);
+  };
 
 module.exports = {
   solution,
