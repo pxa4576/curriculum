@@ -8,9 +8,11 @@
  */
 
 const solution = (a,b,func) => {
-  setTimeout(func,a*1000);
-  setTimeout(func,b*1000);
-};
+  setTimeout(() => {
+    func();
+    setTimeout(func,b);
+  }, a);
+}
 
 module.exports = {
   solution,
