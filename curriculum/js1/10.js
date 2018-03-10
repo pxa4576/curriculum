@@ -9,8 +9,8 @@
 
 const solution = (a, b, func) => {
   setTimeout(() => {
-  func();
-  setTimeout(func, b)
+    func();
+    setTimeout(func, b)
   },a);
   };
 
