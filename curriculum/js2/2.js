@@ -5,8 +5,11 @@
  * @returns {array}
  */
 
-const solution = (a) => {
-  return [];
+const solution = (arr, newarr = [], i = 0) => {
+  if(arr.length === i) return newarr;
+  if((arr[i]) % 2 === 0) newarr.push(arr[i]);
+    else newarr.push(0);
+  return solution(arr, newarr, i+1);
 };
 
 module.exports = {
