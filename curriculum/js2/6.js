@@ -1,11 +1,10 @@
 /**
- * Given an array, return an array of numbers larger than 5
- * @param {array} a
- * @returns {array}
- */
-
+*  * Given an array, return an array of numbers larger than 5
+  *   * @param {array} a
+  *    * @returns {array}
+  *     */
 const solution = (a) => {
-  return [];
+  return  a.filter((element, index) => a[index] > 5)
 };
 
 module.exports = {
